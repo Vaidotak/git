@@ -140,6 +140,7 @@ alias c='clear'
 alias h='history'
 alias j='jobs -l'
 alias path='echo -e ${PATH//:/\n}'
+alias wifi='nmcli -f SSID,BSSID,SIGNAL,RATE,BARS,SECURITY dev wifi list'
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
