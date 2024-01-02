@@ -3,7 +3,7 @@
 # Atnaujinti sistemos paketų informaciją
 sudo pacman -Syu --noconfirm
 
-sudo pacman -S --noconfirm vim nano neofetch git htop bpytop calibre telegram-desktop timeshift filezilla firefox signal-desktop shutter bitwarden vlc mc qbittorrent grub-customizer base-devel go android-file-transfer code gedit bluetoothctl bluez bluez-utils intel-ucode gnome-extra gnome-shell-extension-manager gnome-shell-extension-dash-to-panel obs-studio clamav ufw zsh zsh-syntax-highlighting libgda
+sudo pacman -S --noconfirm vim nano neofetch git htop bpytop calibre telegram-desktop timeshift filezilla firefox signal-desktop shutter bitwarden vlc mc qbittorrent grub-customizer base-devel go android-file-transfer code gedit bluetoothctl bluez bluez-utils intel-ucode gnome-extra gnome-shell-extension-manager gnome-shell-extension-dash-to-panel obs-studio clamav ufw zsh zsh-syntax-highlighting libgda man-db
 # unzip unrar libreoffice-still 
 sudo ufw enable
 sudo systemctl enable ufw
@@ -15,11 +15,12 @@ cd yay
 makepkg -si --noconfirm
 cd ..
 
-sudo pacman -S --needed base-devel
+# jau bus sistemoje sudo pacman -S --needed base-devel
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si --noconfirm
 cd ..
+
 # paru <userinput> : Search and install <userinput>
 # paru — : Alias for paru -Syu
 # paru -Sua : Upgrade AUR packages only
@@ -30,6 +31,8 @@ cd ..
 # yay -S trufont
 yay -S --noconfirm ulauncher
 yay -S --noconfirm gdm-settings
+yay -S --noconfirm Stacer
+yay -S --noconfirm Ventoy
 
 sudo pacman -Rns $(pacman -Qtdq) --noconfirm
 sudo pacman-optimize --noconfirm
