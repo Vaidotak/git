@@ -15,6 +15,17 @@ cd yay
 makepkg -si --noconfirm
 cd ..
 
+sudo pacman -S --needed base-devel
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si --noconfirm
+cd ..
+# paru <userinput> : Search and install <userinput>
+# paru — : Alias for paru -Syu
+# paru -Sua : Upgrade AUR packages only
+# paru -Qua : Print available AUR updates
+# paru -Gc <userinput> : Print the AUR comments of <userinput>
+
 # Įdiegti programas naudojant yay
 # yay -S trufont
 yay -S --noconfirm ulauncher
@@ -24,13 +35,13 @@ sudo pacman -Rns $(pacman -Qtdq) --noconfirm
 sudo pacman-optimize --noconfirm
 
 
-# Archlinux install
+# Archlinux install 
 
 # iwctl
 # device list
 # station wlan0 get-networks
 # station wlan0 connect Django  (arba kitą)
-# ping google.lt
+# ping google.lt 
 
 # pacman -Syy
 # pacman -S archlinux-keyring
