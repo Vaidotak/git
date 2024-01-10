@@ -137,11 +137,12 @@ alias cpuinfo='less /proc/cpuinfo'
 # get GPU ram on desktop / laptop##
 alias gpumeminfo='grep -i --color memory /var/log/Xorg.0.log'
 alias c='clear'
-# alias h='history'
-alias l='ls -GghB --group-directories-first'
+#alias h='history'
 alias j='jobs -l'
+alias l='ls -GghB --group-directories-first'
 alias path='echo -e ${PATH//:/\n}'
 alias wifi='nmcli -f SSID,BSSID,SIGNAL,RATE,BARS,SECURITY dev wifi list'
+alias pushgit='cd ~/documents/Obsidian\ Vault/ && git status && git add . && git commit -m "Osidian sync" && git push'
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
