@@ -3,7 +3,7 @@
 # Atnaujinti sistemos paketų informaciją
 sudo pacman -Syu --noconfirm
 
-sudo pacman -S --noconfirm vim nano neofetch git htop bpytop calibre telegram-desktop timeshift filezilla firefox signal-desktop shutter bitwarden vlc mc qbittorrent grub-customizer base-devel go android-file-transfer code gedit bluetoothctl bluez bluez-utils intel-ucode clamav ufw zsh zsh-syntax-highlighting libgda man-db syncthing
+sudo pacman -S --noconfirm vim nano neofetch git htop bpytop calibre telegram-desktop timeshift filezilla firefox signal-desktop shutter bitwarden vlc mc qbittorrent grub-customizer base-devel go android-file-transfer code gedit bluetoothctl bluez bluez-utils intel-ucode clamav ufw zsh zsh-syntax-highlighting libgda man-db obsidian syncthing
 # unzip unrar libreoffice-still  gnome-extra gnome-shell-extension-manager gnome-shell-extension-dash-to-panel obs-studio
 sudo ufw enable
 sudo systemctl enable ufw
