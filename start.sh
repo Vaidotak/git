@@ -1,10 +1,21 @@
 #!/bin/bash
 
+# install metu užstrigus reflectors: ctrl alt F2 | login root [root]. Paleisti: systemctl stop reflector Grįžti: ctrl alt F1
+# Po install: sudo pacman-key --refresh-keys
+# refresh-keys dariau, nes instaliacijos metu užstrigo reflektoriai. Toliau minimalus Plasma install
+#sudo pacman-key --refresh-keys
+#sudo pacman -Syu
+#sudo pacman -S plasma-desktop
+#sudo pacman -S plasma-nm plasma-pa dolphin konsole kdeplasma-addons kde-gtk-config breeze-gtk
+#sudo systemctl enable NetworkManager
+#sudo systemctl start NetworkManager
+#reboot
+
 # Atnaujinti sistemos paketų informaciją
 sudo pacman -Syu --noconfirm
 
-sudo pacman -S --noconfirm vim nano neofetch git htop bpytop calibre telegram-desktop timeshift filezilla firefox signal-desktop shutter bitwarden vlc mc qbittorrent grub-customizer base-devel go android-file-transfer code gedit bluetoothctl bluez bluez-utils intel-ucode clamav ufw zsh zsh-syntax-highlighting libgda man-db obsidian syncthing
-# unzip unrar libreoffice-still  gnome-extra gnome-shell-extension-manager gnome-shell-extension-dash-to-panel obs-studio
+sudo pacman -S --noconfirm vim nano neofetch git htop bpytop calibre telegram-desktop timeshift filezilla firefox signal-desktop shutter bitwarden vlc mc qbittorrent grub-customizer base-devel go android-file-transfer code bluez bluez-utils intel-ucode clamav ufw zsh zsh-syntax-highlighting libgda man-db obsidian syncthing tokodon spectacle viewnior kscreen kate
+# unzip unrar libreoffice-still  gnome-extra gnome-shell-extension-manager gnome-shell-extension-dash-to-panel obs-studio gedit bluetoothctl
 sudo ufw enable
 sudo systemctl enable ufw
 sudo systemctl start bluetooth.service
@@ -50,3 +61,4 @@ sudo pacman-optimize --noconfirm
 # pacman -S archlinux-keyring
 # pacman -S archinstall
 # archinstall 
+
