@@ -145,6 +145,9 @@ alias l='ls -GghB --group-directories-first'
 alias path='echo -e ${PATH//:/\n}'
 alias wifi='nmcli -f SSID,BSSID,SIGNAL,RATE,BARS,SECURITY dev wifi list'
 alias pushgit='cd /home/vaidotak/Dokumentai/Obsidian/ && git status && git add . && git commit -m "Osidian sync" && git push'
+alias push='cd /home/vaidotak/Dokumentai/Obsidian/ && git status && git add . && git commit -m "Obsidian sync" && git push -u gitlab obsidian'
+#alias pushall='cd /home/vaidotak/Dokumentai/Obsidian/ && git status && git add . && git commit -m "Osidian sync" && git push --all gitlab obsidian && git push -u github'
+alias archgit='cd /home/vaidotak/archlinux/ && git add . && git commit -m "zsh ir start.sh atnaujinimas" && git push'
 alias blue='systemctl start bluetooth.service'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
