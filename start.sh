@@ -14,10 +14,10 @@
 # Atnaujinti sistemos paketų informaciją
 sudo pacman -Syu --noconfirm
 
-sudo pacman -S --noconfirm vim nano neofetch git htop bpytop calibre telegram-desktop timeshift filezilla firefox signal-desktop shutter bitwarden vlc mc qbittorrent grub-customizer base-devel go android-file-transfer code bluez bluez-utils intel-ucode clamav ufw zsh zsh-syntax-highlighting libgda man-db obsidian syncthing tokodon spectacle viewnior kscreen kate
+sudo pacman -S --noconfirm vim nano neofetch git htop bpytop calibre telegram-desktop timeshift filezilla firefox signal-desktop shutter bitwarden vlc mc qbittorrent grub-customizer base-devel go android-file-transfer code bluez bluez-utils intel-ucode clamav firewalld zsh zsh-syntax-highlighting libgda man-db obsidian syncthing tokodon spectacle viewnior kscreen kate
 # unzip unrar libreoffice-still  gnome-extra gnome-shell-extension-manager gnome-shell-extension-dash-to-panel obs-studio gedit bluetoothctl
-sudo ufw enable
-sudo systemctl enable ufw
+sudo firewalld enable
+sudo systemctl enable firewalld
 sudo systemctl start bluetooth.service
 
 # Įdiegti yay
